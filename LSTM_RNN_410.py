@@ -3,6 +3,8 @@
 # SOURCE(s) https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/
 # SOURCE(s) https://www.pyimagesearch.com/2020/09/14/getting-started-with-easyocr-for-optical-character-recognition/
 # SOURCE(s) https://nanonets.com/blog/deep-learning-ocr/
+# https://machinelearningmastery.com/simple-genetic-algorithm-from-scratch-in-python/
+# https://colab.research.google.com/drive/1Kg6AvXKdSZXoqzSZ5BRHuewyHRMvrZs1#scrollTo=FR0xFmRapK-e
 # FILENAME LSTM_RNN_410.py
 
 import numpy as np
@@ -43,5 +45,20 @@ default arguments
 args['image']="../input/text-detection/example-images/Example-images/ex24.jpg"
 image = cv2.imread(args['image'])
 
-# saving training data origionals with shape vs recursive issues
+# saving training data originals with shape vs recursive issues
+orig = image.copy()
+(origH, origW) = image.shape[:2]
 
+# set new height and width to default 320 by using args dictionary
+(args["width"], args["height"])
+
+# ratio between original and new image for both height and weight.
+(newW, NewH) = (args["width"], args["height"])
+
+# Calculate the rstio between original and new image  for both height and weight
+# This ratio will be used to translate buding box location on the orinal images
+rW = origW / float(newW)
+rH = origH / float(newH)
+
+# resize the originl image to new dimensions
+image = cv2 =
