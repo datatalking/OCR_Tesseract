@@ -1,0 +1,8 @@
+LSTM_RNN_410.py
+README.md
+main.py
+setup.py
+OCR_Tesseract.egg-info/PKG-INFO
+OCR_Tesseract.egg-info/SOURCES.txt
+OCR_Tesseract.egg-info/dependency_links.txt
+OCR_Tesseract.egg-info/top_level.txt
