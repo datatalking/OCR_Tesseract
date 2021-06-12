@@ -6,6 +6,8 @@
 # https://machinelearningmastery.com/simple-genetic-algorithm-from-scratch-in-python/
 # https://colab.research.google.com/drive/1Kg6AvXKdSZXoqzSZ5BRHuewyHRMvrZs1#scrollTo=FR0xFmRapK-e
 # FILENAME LSTM_RNN_410.py
+# SOURCE https://stackoverflow.com/questions/20831612/getting-the-bounding-box-of-the-recognized-words-using-python-tesseract
+# TODO Connect to home server
 
 import numpy as np
 import cv2
@@ -59,6 +61,7 @@ default arguments
 
 
 def image_to_string():
+	"""SOURCE"""
 	img_cv = cv2.imread(r'/<path_to_image>/digits.png')
 	
 	# By default OpenCV stores images in BGR format and since pytesseract assumes RGB format,
