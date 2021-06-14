@@ -1,11 +1,13 @@
 # SOURCE https://stackoverflow.com/questions/54395735/how-to-work-with-heic-image-file-types-in-python
 
 import whatimage
+# brew install libffi libheif # subdependancy of pyheif # then install pip install git+https://github.com/carsales/pyheif.git
 import pyheif
 from PIL import Image
 from pathlib import Path
 import os
 import shutil
+
 
 def main():
 	rename_heic_to_jpeg()
@@ -33,6 +35,7 @@ def rename_heic_to_jpeg():
 from PIL import Image
 import pyheif
 # TOFIX pyheif creates wheel error
+# tried sudo -H pip install wheel then pyheif
 	# os.rename(dst_file, new_dst_file_name)#rename
 	heif_file = Path('/owner/sbox/data/test_data/IMG_1647.HEIC')
 	# heif_file = pyheif.read("IMG_7424.HEIC")

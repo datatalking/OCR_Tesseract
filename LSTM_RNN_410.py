@@ -8,11 +8,13 @@
 # FILENAME LSTM_RNN_410.py
 # SOURCE https://stackoverflow.com/questions/20831612/getting-the-bounding-box-of-the-recognized-words-using-python-tesseract
 # TODO Connect to home server
+# integrate youtrack and github adminstration ? https://www.jetbrains.com/help/youtrack/standalone/GitHub-Integration.html
+ # sync https://github.com/notifications with youtrack
 
 import numpy as np
 import cv2
-!pip install opencv-python # NOTE: *not* opencv-contrib-python
-pip install easyocr
+import opencv-python # NOTE: *not* opencv-contrib-python
+import easyocr
 from imutils.object_detection import non_max_suppression
 import pytesseract
 from matplotlib import pyplot
